@@ -215,5 +215,8 @@ visuals.polar_plot(
 )
 
 st.pyplot(fig, use_container_width=False)
-   
+col1, col2, col3 = st.columns([1, 1, 2])
+
+with col1:
+    st.pyplot(fig, use_container_width=False)   
    
