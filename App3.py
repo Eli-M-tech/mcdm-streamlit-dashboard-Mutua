@@ -202,7 +202,7 @@ if st.button("Run MCDM Analysis"):
     st.subheader("Polar Ranking Plot")
 
 fig, ax = plt.subplots(
-    figsize=(7, 7),
+    figsize=(8, 6),   # wider than tall → better fit
     dpi=150,
     subplot_kw=dict(projection='polar')
 )
@@ -213,9 +213,9 @@ visuals.polar_plot(
     legend_ncol=2,
     ax=ax
 )
-plt.tight_layout(pad=2.0)
-col1, col2, col3 = st.columns([1, 3, 1])
 
-with col1:
-    st.pyplot(fig, use_container_width=False)   
+plt.tight_layout(pad=1.2)
+
+# Full-width display (acts like fullscreen)
+st.pyplot(fig, use_container_width=True)  
    
