@@ -73,7 +73,11 @@ if alts_df.isnull().values.any():
     st.stop()
 
 alts_data = alts_df.to_numpy()
+min_val = np.min(alts_data)
 
+if min_val <= 0:
+    st.warning("Data contains zero/negative values. Adjusting for WSM compatibility.")
+    alts_data = alts_data - min_val + 1e-6
 # ===============================
 # 2. WEIGHTS & TYPES
 # ===============================
