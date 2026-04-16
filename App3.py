@@ -217,7 +217,7 @@ visuals.polar_plot(
 plt.tight_layout(pad=1.0)
 
 # Center it with wide column
-col1, col2, col3 = st.columns([1, 3, 1])
+col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
     st.pyplot(fig, use_container_width=False)  
