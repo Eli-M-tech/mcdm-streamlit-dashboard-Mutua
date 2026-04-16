@@ -16,7 +16,7 @@ st.sidebar.header("1. Upload or Edit Data")
 uploaded_file = st.sidebar.file_uploader("Upload CSV", type=['csv'])
 
 if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file, sep=';')
+    df = pd.read_csv(uploaded_file)
 else:
     # Default data fallback
     data = {
