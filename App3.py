@@ -217,5 +217,5 @@ visuals.polar_plot(
 plt.tight_layout(pad=1.2)
 
 # Full-width display (acts like fullscreen)
-st.pyplot(fig, use_container_width=True)  
+st.pyplot(fig, use_container_width=False)  
    
