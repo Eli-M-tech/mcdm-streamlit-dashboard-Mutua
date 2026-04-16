@@ -202,7 +202,7 @@ if st.button("Run MCDM Analysis"):
     st.subheader("Polar Ranking Plot")
 
 fig, ax = plt.subplots(
-    figsize=(8, 6),   # wider than tall → better fit
+    figsize=(6, 6),   # wider than tall → better fit
     dpi=150,
     subplot_kw=dict(projection='polar')
 )
