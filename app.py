@@ -96,6 +96,8 @@ if st.button("Run MCDM Analysis"):
             
             prefs.append(pref)
             rank = np.argsort(-pref) + 1
+            ranks.append(rank)
+            
             
         col1, col2 = st.columns(2)
         
