@@ -213,8 +213,8 @@ visuals.polar_plot(
     legend_ncol=2,
     ax=ax
 )
-
-col1, col2, col3 = st.columns([1, 2, 1])
+plt.tight_layout(pad=2.0)
+col1, col2, col3 = st.columns([1, 3, 1])
 
 with col1:
     st.pyplot(fig, use_container_width=False)   
