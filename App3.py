@@ -33,7 +33,7 @@ if uploaded_file is not None:
         dialect = csv.Sniffer().sniff(uploaded_file.read(1024).decode())
         uploaded_file.seek(0)
 
-        df = pd.read_csv(uploaded_file, sep=dialect.delimiter)
+        df = pd.read_csv(uploaded_file, sep=';')
 
     except Exception:
         st.error("Could not read file. Ensure it's a valid CSV.")
