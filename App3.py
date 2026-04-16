@@ -201,7 +201,6 @@ if st.button("Run MCDM Analysis"):
     # ===============================
     st.subheader("Polar Ranking Plot")
 
-    )
 fig, ax = plt.subplots(
     figsize=(5, 5),
     dpi=150,
