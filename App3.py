@@ -216,4 +216,4 @@ visuals.polar_plot(
 
 st.pyplot(fig, use_container_width=False)
    
-    st.pyplot(fig)
+   
