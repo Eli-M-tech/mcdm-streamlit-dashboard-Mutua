@@ -203,7 +203,7 @@ if st.button("Run MCDM Analysis"):
 
     fig, ax = plt.subplots(
         figsize=(7, 7),
-        dpi=150,
+        dpi=50,
         subplot_kw=dict(projection='polar')
     )
 
